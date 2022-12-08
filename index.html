@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="js">hello javascript</h1>
+    <!-- 
+    <ul>
+      <l1 class="tech">html</l1>
+      <l1 class="tech">css</l1>
+      <l1>js</l1>
+    </ul> -->
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+    <!-- getElementById, class, tagname => querySelector -->
+    <!-- querySelector selects HTML element  by id, className , and tagName-->
+    <!-- 
+    <h1>hello javascript</h1>
+    <p>hello</p>
+    <p>hi</p>
+    <p>hey</p> -->
+
+    <ul></ul>
+
+    <script>
+      // root -->
+      // console.log(document);
+      // console.log(window.document);
+
+      //
+      console.log(document.documentElement); // children-----> //
+      console.log(document.body.children); //
+      console.log(document.body.firstChild); //
+      console.log(document.body.firstElementChild);
+      //  finding the element----->
+      // by id-->
+      var value = document.getElementById("js").innerHTML;
+      var value1 = document.getElementById("js").innerText; // console.log(value); //
+      console.log(value1); // by class--> // let value =
+      document.getElementsByClassName("tech"); // let value =
+      document.getElementsByClassName("tech")[0]; // let value =
+      document.getElementsByClassName("tech"); // console.log(value[0].innerText);
+      // console.log(value[1].innerHTML); // by tagname --------> // let val =
+      document.getElementsByTagName("h1")[0].innerText; // console.log(val); // by
+      //querySelector -------> // let value1 = document.querySelector("h1"); //
+      tagname; // console.log(value1); // set attribute----> // let value =
+      document.querySelectorAll("p"); // value[1].setAttribute("id", "hello"); //
+      value[1].classList.add("id", "hello");
+      // value[1].textContent = "hellojyoti singh, how are you beba!!"; // adding and deleting----->
+      // const list= `
+      <div>
+        <li>one</li>
+
+        <li>two</li>
+
+        <li>three</li>
+      </div>;
+      // let ul = document.querySelector("ul");
+      // ul.innerHTML = list; /
+
+      // create element------>
+      // let value = document.createElement("h1");
+      //
+      value.className = "title";
+      // value.style.fontSize = "20px";
+      //
+      value.textContent = "hello javascript";
+      // // console.log(value);
+      //
+      document.body.appendChild(value); // remove element------> // const ul =
+      document.querySelector("ul");
+      // const lists =
+      document.querySelectorAll("li");
+      // for (list of lists) { //
+      document.ul.removeChild(list); // }
+    </script>
+  </body>
+</html>
